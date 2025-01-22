@@ -5,7 +5,6 @@ from langchain_openai import AzureChatOpenAI, AzureOpenAIEmbeddings
 from langchain_community.document_loaders import TextLoader
 from langchain_experimental.graph_transformers import LLMGraphTransformer
 
-# https://cmtopenai.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-08-01-preview
 graph = Neo4jGraph(
     url=os.getenv("NEO4J_URL"),
     username=os.getenv("NEO4J_USERNAME", "neo4j"),
