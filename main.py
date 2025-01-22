@@ -12,7 +12,6 @@ graph = Neo4jGraph(
 )
 llm = llm = AzureChatOpenAI(
     azure_deployment="gpt-4o",
-    # model="gpt-4o",  # must append 'azure/' in order to call azure llm in Crew lib.
     api_version="2024-08-01-preview",
     temperature=0,
 )
